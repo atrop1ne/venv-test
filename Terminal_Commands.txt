@@ -1,0 +1,22 @@
+py -3.9 -m venv sc1_venv // Создать venv для python 3.9
+py \Путь до скрипта // Запустить скрипт
+pip freeze > requirements.txt // Создать requirements
+pip install -r requirements.txt // Скачать пакеты
+
+conda//////////////////////////////////
+
+conda create -n evname python=x.x (anaconda)
+
+conda activate envname
+
+C:\Users\antro\anaconda3\envs\sc2_venv\python.exe .\sc2_script.py
+
+conda env export > \path\name.yml
+
+conda env create -f name.yml
+
+// Если надо создать env в другой папке
+conda create -p env-dir
+conda config --show envs_dirs
+conda config --append envs_dirs /path
+conda list -p 'D:\Учёба\4Курс_7Семестр\Технологии внедрения ПО\ТВПО_Пр1\venv-test\Scenario2\sc2_venv' // посмотреть список пакетов
